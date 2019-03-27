@@ -16,19 +16,35 @@ var str = "Operation and Operation Queue"
 //let queue = OperationQueue()
 //queue.addOperation(operation1)
 
-print(Thread.current)
+// ===
 
-var result: String?
-let concurrentOperation = BlockOperation {
-    print(Thread.current)
-    result = "The Swift" + " " + "Developers"
-    print("I'm here")
-}
+//print(Thread.current)
+//
+//var result: String?
+//let concurrentOperation = BlockOperation {
+//    print(Thread.current)
+//    result = "The Swift" + " " + "Developers"
+//    print("I'm here")
+//}
+//
+//let queue = OperationQueue()
+//
+//queue.addOperation(concurrentOperation)
+//sleep(2)
+//print(result ?? "Not defined")
 
+// ===
 
-let queue = OperationQueue()
-queue.addOperation(concurrentOperation)
-print(result ?? "Not defined")
+//let operationQueue1 = OperationQueue()
+//let operationQueue2 = OperationQueue()
+//
+//var int = 1
+//let operation = BlockOperation { print(int); int += 1 }
+//
+//operationQueue1.addOperation(operation)
+//print(int)
+
+// ===
 
 //print(Thread.current)
 //let queue1 = OperationQueue()
@@ -36,6 +52,8 @@ print(result ?? "Not defined")
 //    print("test")
 //    print(Thread.current)
 //}
+
+// ===
 
 //print(Thread.current)
 //
@@ -48,7 +66,7 @@ print(result ?? "Not defined")
 //let myThread = MyThread()
 //myThread.start()
 
-/*print(Thread.current)
+print(Thread.current)
 class OperationA: Operation {
     override func main() {
         print("Test operation A")
@@ -61,4 +79,4 @@ let operationA = OperationA()
 
 let queue1 = OperationQueue()
 queue1.addOperation(operationA)
-*/
+
